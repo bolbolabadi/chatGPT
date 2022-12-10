@@ -96,3 +96,14 @@ For example, if the website you want to find the real IP address of is "example.
 nmap -sn -PS example.com
 This command will use the "Ping Scan" (-sP) and "SYN Ping" (-PS) options to scan the network for hosts serving the "example.com" domain.
 In the output of the scan, look for the IP address of the origin server that is serving the website behind the CDN. This will be the real IP address of the website.
+
+
+
+
+
+Another way to find the real IP address of a website behind a CDN is to look for misconfigurations in the CDN or the website itself. Sometimes, CDN providers or website administrators may accidentally expose the real IP address of the origin server in the configuration of the CDN or the website. By looking for these misconfigurations, you may be able to find the real IP address of the website behind the CDN.
+Here are some examples of common misconfigurations that can expose the real IP address of a website behind a CDN:
+Incorrect DNS configuration: The CDN provider or website administrator may have accidentally configured the DNS records for the website to point directly to the origin server, instead of to the CDN. This can expose the real IP address of the origin server in the DNS records.
+Unsecured or outdated web server software: The web server software running on the origin server may have vulnerabilities that can be exploited to disclose the real IP address of the server. For example, older versions of web server software may have a "server banner" feature that exposes the real IP address of the server in the HTTP response headers.
+Exposed debug information: The website or the CDN may have debug information enabled that exposes the real IP address of the origin server. For example, the website may have an error page that shows the real IP address of the server in the debug information.
+To find the real IP address of a website behind a CDN by looking for misconfigurations, you can use a web application scanner such as Burp Suite or a network scanner such as Nmap to scan the website and the CDN for these types of vulnerabilities and misconfigurations.
