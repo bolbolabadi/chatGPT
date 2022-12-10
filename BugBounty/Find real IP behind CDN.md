@@ -7,6 +7,7 @@ Type the following command and press Enter: traceroute [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
 
 ``` traceroute example.com ```
+
 This command will show the route that a packet of data takes from your computer to the website. The output will show the IP addresses of the intermediate servers that the packet passes through on its way to the website, and it will also show the IP address of the origin server that is serving the website behind the CDN.
 
 
@@ -29,6 +30,7 @@ Type the following command and press Enter: nslookup [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
 
 ``` nslookup example.com ```
+
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
 
 
@@ -39,7 +41,9 @@ Here is an example of how to use the dig command to find the real IP address of 
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: dig [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-dig example.com
+
+``` dig example.com ```
+
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
 
 
@@ -62,10 +66,12 @@ In the filtered network traffic, look for the DNS response packets that contain 
 + Another advanced way to find the real IP address of a website behind a CDN is to use a network traffic analysis tool such as tcpdump. Tcpdump is a command-line network traffic analyzer that can be used to capture and analyze network packets. By using tcpdump, you can find the real IP address of a website behind a CDN by capturing and analyzing the network traffic between your computer and the website.
 Here is an example of how to use tcpdump to find the real IP address of a website behind a CDN:
 Open a terminal or command prompt on your computer.
-Type the following command and press Enter: tcpdump -i [interface] -nn
+Type the following command and press Enter: ``` tcpdump -i [interface] -nn ```
 Replace "[interface]" with the name of the network interface you want to use to capture network traffic.
 For example, if you want to capture network traffic on the "eth0" interface, you would type the following command:
-tcpdump -i eth0 -nn
+
+``` tcpdump -i eth0 -nn ```
+
 Open a web browser on your computer and go to the website you want to find the real IP address of.
 In the terminal where tcpdump is running, look for the DNS response packets that contain the IP address of the website. The IP address of the origin server that is serving the website behind the CDN will be in the "Answer" section of the DNS response packet.
 
