@@ -5,7 +5,8 @@ Here is an example of how to use the traceroute command to find the real IP addr
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: traceroute [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-traceroute example.com
+
+``` traceroute example.com ```
 This command will show the route that a packet of data takes from your computer to the website. The output will show the IP addresses of the intermediate servers that the packet passes through on its way to the website, and it will also show the IP address of the origin server that is serving the website behind the CDN.
 
 
@@ -26,7 +27,8 @@ Here is an example of how to use the nslookup command to find the real IP addres
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: nslookup [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-nslookup example.com
+
+``` nslookup example.com ```
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
 
 
