@@ -8,7 +8,7 @@ For example, if the website you want to find the real IP address of is "example.
 
 ``` traceroute example.com ```
 
-This command will show the route that a packet of data takes from your computer to the website. The output will show the IP addresses of the intermediate servers that the packet passes through on its way to the website, and it will also show the IP address of the origin server that is serving the website behind the CDN.
+  This command will show the route that a packet of data takes from your computer to the website. The output will show the IP addresses of the intermediate servers that the packet passes through on its way to the website, and it will also show the IP address of the origin server that is serving the website behind the CDN.
 
 
 
