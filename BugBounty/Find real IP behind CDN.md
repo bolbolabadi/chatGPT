@@ -14,9 +14,9 @@ This command will show the route that a packet of data takes from your computer 
 
 + Another way to find the real IP address of a website behind a CDN is to use a website that provides this information, such as "CDN Planet". CDN Planet is a website that provides information and tools for CDN users and administrators. It provides a tool called the "CDN Finder" that can be used to find the real IP address of a website behind a CDN.
 Here is an example of how to use CDN Planet's CDN Finder tool to find the real IP address of a website behind a CDN:
-Go to the CDN Planet website at https://www.cdnplanet.com/.
-Click on the "CDN Finder" tab in the top menu.
-In the "Enter a Domain" field, type the name of the website you want to find the real IP address of and press Enter.
+  + Go to the CDN Planet website at https://www.cdnplanet.com/.
+  + Click on the "CDN Finder" tab in the top menu.
+  + In the "Enter a Domain" field, type the name of the website you want to find the real IP address of and press Enter.
 For example, if the website you want to find the real IP address of is "example.com", you would type "example.com" in the "Enter a Domain" field.
 The CDN Finder tool will show the real IP address of the website behind the CDN, along with other information such as the CDN provider and the type of CDN used.
 
