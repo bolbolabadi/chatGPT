@@ -51,12 +51,12 @@ This command will query the DNS to find the IP address of the website. The outpu
 
 + Another advanced way to find the real IP address of a website behind a CDN is to use a network traffic analysis tool such as Wireshark. Wireshark is a powerful network protocol analyzer that can be used to capture, analyze, and inspect network traffic. By using Wireshark, you can find the real IP address of a website behind a CDN by analyzing the network traffic between your computer and the website.
 Here is an example of how to use Wireshark to find the real IP address of a website behind a CDN:
-Install and open Wireshark on your computer.
-In Wireshark, select the network interface that you want to use to capture network traffic.
-Start the network capture by clicking on the "Start" button.
-Open a web browser on your computer and go to the website you want to find the real IP address of.
-Stop the network capture by clicking on the "Stop" button in Wireshark.
-In Wireshark, use the filter field to filter the captured network traffic by the domain name of the website you are interested in.
+  + Install and open Wireshark on your computer.
+  + In Wireshark, select the network interface that you want to use to capture network traffic.
+  + Start the network capture by clicking on the "Start" button.
+  + Open a web browser on your computer and go to the website you want to find the real IP address of.
+  + Stop the network capture by clicking on the "Stop" button in Wireshark.
+  + In Wireshark, use the filter field to filter the captured network traffic by the domain name of the website you are interested in.
 For example, if the website you want to find the real IP address of is "example.com", you would type "example.com" in the filter field.
 In the filtered network traffic, look for the DNS response packets that contain the IP address of the website. The IP address of the origin server that is serving the website behind the CDN will be in the "Answer" section of the DNS response packet.
 
