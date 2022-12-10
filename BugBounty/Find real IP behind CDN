@@ -1,11 +1,8 @@
 To find the real IP address of a website behind a CDN (Content Delivery Network), you can use a tool such as the "traceroute" command. Traceroute is a network diagnostic tool that shows the route that a packet of data takes from your computer to the destination website. By using traceroute, you can see the IP addresses of the intermediate servers that the packet passes through on its way to the website, and you can find the IP address of the origin server that is serving the website behind the CDN.
 Here is an example of how to use the traceroute command to find the real IP address of a website behind a CDN:
-
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: traceroute [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-
-
 traceroute example.com
 This command will show the route that a packet of data takes from your computer to the website. The output will show the IP addresses of the intermediate servers that the packet passes through on its way to the website, and it will also show the IP address of the origin server that is serving the website behind the CDN.
 
@@ -13,12 +10,10 @@ This command will show the route that a packet of data takes from your computer 
 
 Another way to find the real IP address of a website behind a CDN is to use a website that provides this information, such as "CDN Planet". CDN Planet is a website that provides information and tools for CDN users and administrators. It provides a tool called the "CDN Finder" that can be used to find the real IP address of a website behind a CDN.
 Here is an example of how to use CDN Planet's CDN Finder tool to find the real IP address of a website behind a CDN:
-
 Go to the CDN Planet website at https://www.cdnplanet.com/.
 Click on the "CDN Finder" tab in the top menu.
 In the "Enter a Domain" field, type the name of the website you want to find the real IP address of and press Enter.
 For example, if the website you want to find the real IP address of is "example.com", you would type "example.com" in the "Enter a Domain" field.
-
 The CDN Finder tool will show the real IP address of the website behind the CDN, along with other information such as the CDN provider and the type of CDN used.
 
 
@@ -26,11 +21,9 @@ The CDN Finder tool will show the real IP address of the website behind the CDN,
 
 Another way to find the real IP address of a website behind a CDN is to use the "nslookup" command. Nslookup is a network administration tool that is used to query the Domain Name System (DNS) to find information about a domain name or IP address. By using nslookup, you can find the IP address of the origin server that is serving the website behind the CDN.
 Here is an example of how to use the nslookup command to find the real IP address of a website behind a CDN:
-
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: nslookup [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-
 nslookup example.com
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
 
@@ -39,10 +32,22 @@ This command will query the DNS to find the IP address of the website. The outpu
 
 Another way to find the real IP address of a website behind a CDN is to use the "dig" command. Dig is a network administration tool that is used to query the Domain Name System (DNS) to find information about a domain name or IP address. By using dig, you can find the IP address of the origin server that is serving the website behind the CDN.
 Here is an example of how to use the dig command to find the real IP address of a website behind a CDN:
-
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: dig [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-
 dig example.com
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
+
+
+
+
+Another advanced way to find the real IP address of a website behind a CDN is to use a network traffic analysis tool such as Wireshark. Wireshark is a powerful network protocol analyzer that can be used to capture, analyze, and inspect network traffic. By using Wireshark, you can find the real IP address of a website behind a CDN by analyzing the network traffic between your computer and the website.
+Here is an example of how to use Wireshark to find the real IP address of a website behind a CDN:
+Install and open Wireshark on your computer.
+In Wireshark, select the network interface that you want to use to capture network traffic.
+Start the network capture by clicking on the "Start" button.
+Open a web browser on your computer and go to the website you want to find the real IP address of.
+Stop the network capture by clicking on the "Stop" button in Wireshark.
+In Wireshark, use the filter field to filter the captured network traffic by the domain name of the website you are interested in.
+For example, if the website you want to find the real IP address of is "example.com", you would type "example.com" in the filter field.
+In the filtered network traffic, look for the DNS response packets that contain the IP address of the website. The IP address of the origin server that is serving the website behind the CDN will be in the "Answer" section of the DNS response packet.
