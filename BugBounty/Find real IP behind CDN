@@ -20,3 +20,29 @@ In the "Enter a Domain" field, type the name of the website you want to find the
 For example, if the website you want to find the real IP address of is "example.com", you would type "example.com" in the "Enter a Domain" field.
 
 The CDN Finder tool will show the real IP address of the website behind the CDN, along with other information such as the CDN provider and the type of CDN used.
+
+
+
+
+Another way to find the real IP address of a website behind a CDN is to use the "nslookup" command. Nslookup is a network administration tool that is used to query the Domain Name System (DNS) to find information about a domain name or IP address. By using nslookup, you can find the IP address of the origin server that is serving the website behind the CDN.
+Here is an example of how to use the nslookup command to find the real IP address of a website behind a CDN:
+
+Open a command prompt or terminal on your computer.
+Type the following command and press Enter: nslookup [website-name]
+For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
+
+nslookup example.com
+This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
+
+
+
+
+Another way to find the real IP address of a website behind a CDN is to use the "dig" command. Dig is a network administration tool that is used to query the Domain Name System (DNS) to find information about a domain name or IP address. By using dig, you can find the IP address of the origin server that is serving the website behind the CDN.
+Here is an example of how to use the dig command to find the real IP address of a website behind a CDN:
+
+Open a command prompt or terminal on your computer.
+Type the following command and press Enter: dig [website-name]
+For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
+
+dig example.com
+This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
