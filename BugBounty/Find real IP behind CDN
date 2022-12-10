@@ -107,3 +107,13 @@ Incorrect DNS configuration: The CDN provider or website administrator may have 
 Unsecured or outdated web server software: The web server software running on the origin server may have vulnerabilities that can be exploited to disclose the real IP address of the server. For example, older versions of web server software may have a "server banner" feature that exposes the real IP address of the server in the HTTP response headers.
 Exposed debug information: The website or the CDN may have debug information enabled that exposes the real IP address of the origin server. For example, the website may have an error page that shows the real IP address of the server in the debug information.
 To find the real IP address of a website behind a CDN by looking for misconfigurations, you can use a web application scanner such as Burp Suite or a network scanner such as Nmap to scan the website and the CDN for these types of vulnerabilities and misconfigurations.
+
+
+
+
+Another way to find the real IP address of a website behind a CDN is to use social engineering techniques. Social engineering is the use of psychological manipulation to trick people into revealing sensitive information. By using social engineering techniques, you may be able to trick the website administrator or the CDN provider into revealing the real IP address of the website behind the CDN.
+Here is an example of how to use social engineering to find the real IP address of a website behind a CDN:
+Find the contact information for the website administrator or the CDN provider, such as their email address or phone number.
+Pretend to be a legitimate user or customer of the website, and contact the website administrator or the CDN provider.
+Use social engineering techniques to trick the website administrator or the CDN provider into revealing the real IP address of the website behind the CDN.
+For example, you could pretend to be having technical problems with the website and ask the website administrator for help. You could then ask the website administrator for the IP address of the website, and they may unwittingly give you the real IP address of the origin server behind the CDN.
