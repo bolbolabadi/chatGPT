@@ -84,3 +84,15 @@ Use the SSRF vulnerability to send a request from the vulnerable server to the w
 For example, if the website you want to find the real IP address of is "example.com" and the IP address of the origin server is "192.0.2.1", you could use the following URL in the SSRF request:
 http://192.0.2.1/index.html
 If the SSRF request is successful, the server will return the contents of the website hosted at the IP address specified in the URL. This will allow you to find the real IP address of the website behind the CDN.
+
+
+
+
+Another way to find the real IP address of a website behind a CDN is to use a network scanning tool such as Nmap. Nmap is a powerful network scanning and security tool that can be used to discover hosts and services on a network, including the real IP addresses of websites behind a CDN.
+Here is an example of how to use Nmap to find the real IP address of a website behind a CDN:
+Install and open Nmap on your computer.
+In Nmap, use the "Host Discovery" options to scan the network for hosts that are serving the website you want to find the real IP address of.
+For example, if the website you want to find the real IP address of is "example.com", you could use the following command to scan for hosts serving the "example.com" domain:
+nmap -sn -PS example.com
+This command will use the "Ping Scan" (-sP) and "SYN Ping" (-PS) options to scan the network for hosts serving the "example.com" domain.
+In the output of the scan, look for the IP address of the origin server that is serving the website behind the CDN. This will be the real IP address of the website.
