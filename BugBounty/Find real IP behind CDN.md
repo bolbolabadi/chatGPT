@@ -2,8 +2,8 @@
 
 + To find the real IP address of a website behind a CDN (Content Delivery Network), you can use a tool such as the "traceroute" command. Traceroute is a network diagnostic tool that shows the route that a packet of data takes from your computer to the destination website. By using traceroute, you can see the IP addresses of the intermediate servers that the packet passes through on its way to the website, and you can find the IP address of the origin server that is serving the website behind the CDN.
 Here is an example of how to use the traceroute command to find the real IP address of a website behind a CDN:
-Open a command prompt or terminal on your computer.
-Type the following command and press Enter: traceroute [website-name]
+  + Open a command prompt or terminal on your computer.
+  + Type the following command and press Enter: traceroute [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
 
 ``` traceroute example.com ```
