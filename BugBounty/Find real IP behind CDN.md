@@ -64,9 +64,7 @@ Open a terminal or command prompt on your computer.
 Type the following command and press Enter: ``` tcpdump -i [interface] -nn ```
 Replace "[interface]" with the name of the network interface you want to use to capture network traffic.
 For example, if you want to capture network traffic on the "eth0" interface, you would type the following command:
-
 ``` tcpdump -i eth0 -nn ```
-
 Open a web browser on your computer and go to the website you want to find the real IP address of.
 In the terminal where tcpdump is running, look for the DNS response packets that contain the IP address of the website. The IP address of the origin server that is serving the website behind the CDN will be in the "Answer" section of the DNS response packet.
 
