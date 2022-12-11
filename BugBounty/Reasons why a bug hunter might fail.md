@@ -1,18 +1,18 @@
 **Here are 54 potential reasons why a bug hunter might fail:**
 
-Lack of knowledge or experience in the target application or system
+1. Lack of knowledge or experience in the target application or system
 
-Failure to properly scope the target and identify all potential vulnerabilities
+1. Failure to properly scope the target and identify all potential vulnerabilities
 
-Not thoroughly testing for all potential vulnerabilities
+1. Not thoroughly testing for all potential vulnerabilities
 
-Not using the appropriate tools or techniques for the specific target
+1. Not using the appropriate tools or techniques for the specific target
 
-Not keeping up with the latest security developments and techniques
+1. Not keeping up with the latest security developments and techniques
 
-Not properly documenting and reporting findings
+1. Not properly documenting and reporting findings
 
-Not following ethical hacking principles and best practices
+1. Not following ethical hacking principles and best practices
 
 Not properly communicating with the target organization
 
