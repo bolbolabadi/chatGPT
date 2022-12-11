@@ -38,9 +38,7 @@ Here is an example of how to use the dig command to find the real IP address of 
 Open a command prompt or terminal on your computer.
 Type the following command and press Enter: dig [website-name]
 For example, if the website you want to find the real IP address of is "example.com", you would type the following command:
-
 ``` dig example.com ```
-
 This command will query the DNS to find the IP address of the website. The output will show the IP address of the origin server that is serving the website behind the CDN.
 
 
