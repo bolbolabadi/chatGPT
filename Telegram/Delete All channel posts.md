@@ -1,4 +1,6 @@
-##To delete all messages in a Telegram channel using a bot and the channel's username, you can use the following code:
+## Delete all messages in a Telegram channel using a bot
+
+To delete all messages in a Telegram channel using a bot and the channel's username, you can use the following code:
 
 ```python
 import telebot
