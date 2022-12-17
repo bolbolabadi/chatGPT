@@ -7,43 +7,47 @@ import re
 from collections import Counter
 
 def recommend_hashtags(content: str) -> List[str]:
-    # split the content into words
-    words = content.split()
+    try:
+        # split the content into words
+        words = content.split()
 
-    # create a dictionary to store the word frequencies
-    word_counts = {}
+        # create a dictionary to store the word frequencies
+        word_counts = {}
 
-    # iterate through the words
-    for word in words:
-        # check if the word is a hashtag
-        if word.startswith('#'):
-            # skip hashtags
-            continue
+        # iterate through the words
+        for word in words:
+            # check if the word is a hashtag
+            if word.startswith('#'):
+                # skip hashtags
+                continue
 
-        # increment the word count
-        if word in word_counts:
-            word_counts[word] += 1
-        else:
-            word_counts[word] = 1
+            # increment the word count
+            if word in word_counts:
+                word_counts[word] += 1
+            else:
+                word_counts[word] = 1
 
-    # sort the word frequencies in descending order
-    sorted_word_counts = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
+        # sort the word frequencies in descending order
+        sorted_word_counts = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
 
-    # create a list of hashtags
-    hashtags = []
+        # create a list of hashtags
+        hashtags = []
 
-    # add the top 3 words as hashtags
-    for i in range(3):
-        # get the word and frequency
-        word, count = sorted_word_counts[i]
+        # add the top 3 words as hashtags
+        for i in range(3):
+            # get the word and frequency
+            word, count = sorted_word_counts[i]
 
-        # create the hashtag
-        hashtag = '#' + word
+            # create the hashtag
+            hashtag = '#' + word
 
-        # add the hashtag to the list
-        hashtags.append(hashtag)
+            # add the hashtag to the list
+            hashtags.append(hashtag)
 
-    return hashtags
+        return hashtags
+    except Exception as e:
+        # return an empty list if an exception occurs
+        return []
 ```
 
 This function first splits the content into a list of words using the split() method. It then iterates through the words and skips any that start with a hashtag symbol ('#'). For the other words, it increments a count in a dictionary for each unique word.
@@ -51,3 +55,4 @@ This function first splits the content into a list of words using the split() me
 The function then sorts the dictionary of word counts in descending order by frequency and creates a list of hashtags based on the top 3 most frequent words. It then returns the list of hashtags.
 
 You can customize this function to fit your specific needs. For example, you could modify the regex pattern used to identify hashtags or change the number of hashtags returned.
+
